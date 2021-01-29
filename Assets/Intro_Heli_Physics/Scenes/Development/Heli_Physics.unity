@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 1012134319}
   - component: {fileID: 1012134320}
   m_Layer: 0
-  m_Name: Pillar_COL
+  m_Name: Mast_COL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 1164582687}
   - component: {fileID: 1164582688}
   m_Layer: 0
-  m_Name: Rail_COL
+  m_Name: L_Skid_COL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 1802913303}
   - component: {fileID: 1802913304}
   m_Layer: 0
-  m_Name: Rail_COL2
+  m_Name: R_Skid_COL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
