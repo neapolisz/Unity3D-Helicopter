@@ -197,8 +197,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238714176}
-  m_LocalRotation: {x: -0.18705606, y: 0.23382603, z: -0.04589302, w: -0.9530107}
-  m_LocalPosition: {x: 4.6141586, y: 8.082468, z: -8.271612}
+  m_LocalRotation: {x: 0.2681412, y: -0.231252, z: 0.06647269, w: 0.93284744}
+  m_LocalPosition: {x: 8.680576, y: 13.697691, z: -14.813196}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441866711}
@@ -293,7 +293,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2007418732}
-  - {fileID: 1591301990}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -311,7 +310,7 @@ GameObject:
   - component: {fileID: 363906795}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -909,11 +908,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591301989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.32302, y: 9.387, z: -8.758504}
+  m_LocalPosition: {x: 0, y: -0.56496143, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 330183555}
-  m_RootOrder: 1
+  m_Father: {fileID: 2007418732}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1601417527
 PrefabInstance:
@@ -1064,7 +1063,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1081,8 +1080,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0ede8358d3b0d4e9f0964a14d24bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverHeight: 0
-  hoverPosition: {fileID: 0}
+  hoverHeight: 3
+  hoverPosition: {fileID: 1591301990}
+  rotForce: 2
+  timeCounter: 0
 --- !u!4 &2007418732 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c383091d39e540846a3658e8114e3c9b,
