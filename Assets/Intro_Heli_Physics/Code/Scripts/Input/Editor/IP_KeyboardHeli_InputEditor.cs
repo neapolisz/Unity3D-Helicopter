@@ -22,6 +22,7 @@ namespace IndiePixel
         {
             base.OnInspectorGUI();
             DrawDebugUI();
+            Repaint();
         }
         #endregion
 
@@ -31,10 +32,10 @@ namespace IndiePixel
             EditorGUILayout.BeginVertical(EditorStyles.helpBox);
             EditorGUILayout.Space();
             EditorGUI.indentLevel++;
-            EditorGUILayout.LabelField("Throttle: " + targetInput.ThrottleInput);
-            EditorGUILayout.LabelField("Collective: " + targetInput.CollectiveInput);
-            EditorGUILayout.LabelField("Cyclic: " + targetInput.CyclicInput);
-            EditorGUILayout.LabelField("Pedal: " + targetInput.PedalInput);
+            EditorGUILayout.LabelField("Throttle (-, =): " + targetInput.ThrottleInput);
+            EditorGUILayout.LabelField("Collective (up, down): " + targetInput.CollectiveInput);
+            EditorGUILayout.LabelField("Cyclic (w, a, s, d): " + targetInput.CyclicInput);
+            EditorGUILayout.LabelField("Pedal (left, right): " + targetInput.PedalInput);
             EditorGUI.indentLevel--;
             EditorGUILayout.Space();
             EditorGUILayout.EndVertical();
