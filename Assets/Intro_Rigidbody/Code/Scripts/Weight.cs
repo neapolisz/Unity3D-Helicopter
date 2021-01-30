@@ -21,6 +21,7 @@ public class Weight : MonoBehaviour
     void Start()
     {
         float finalWeight = weightInLbs * lbs2Kg;
+        weight = finalWeight;
         rb = GetComponent<Rigidbody>();
         if (rb)
         {
