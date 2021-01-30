@@ -17,8 +17,8 @@ namespace IndiePixel
         {
             get { return collectiveInput; }
         }
-        private float cyclicInput = 0f;
-        public float CyclicInput
+        private Vector2 cyclicInput = Vector2.zero;
+        public Vector2 CyclicInput
         {
             get { return cyclicInput; }
         }
@@ -36,6 +36,31 @@ namespace IndiePixel
         protected override void HandleInputs()
         {
             base.HandleInputs();
+            HandleThrottle();
+            HandlePedal();
+            HandleCollective();
+            HandleCyclic();
+        }
+
+        void HandleThrottle()
+        {
+            throttleInput = Input.GetAxis("Throttle");
+        }
+
+        void HandlePedal()
+        {
+            pedalInput = Input.GetAxis("Pedal");
+        }
+
+        void HandleCollective()
+        {
+            collectiveInput = Input.GetAxis("Collective");
+        }
+
+        void HandleCyclic()
+        {
+            cyclicInput.y = vertical;
+            cyclicInput.x = horizontal;
         }
         #endregion
     }
