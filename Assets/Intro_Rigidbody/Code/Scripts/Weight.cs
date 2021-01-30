@@ -10,30 +10,28 @@ public class Weight : MonoBehaviour
 
     public float weight;
 
-
-    const float lbsToKg = 0.454f;
-    const float kgToLbs = 2.205f;
+    const float lbs2Kg = 0.454f;
+    const float kg2Lbs = 2.205f;
 
     private Rigidbody rb;
     #endregion
 
-    #region Builtin Methods
-    // Use this for initialization
-    void Start ()
+    #region Built-in Methods
+    // Start is called before the first frame update
+    void Start()
     {
-        float finalKG = weightInLbs * lbsToKg;
-        weight = finalKG;
+        float finalWeight = weightInLbs * lbs2Kg;
         rb = GetComponent<Rigidbody>();
         if (rb)
         {
-            rb.mass = finalKG;
+            rb.mass = finalWeight;
         }
     }
-	
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    // Update is called once per frame
+    void Update()
     {
-		
-	}
+        
+    }
     #endregion
 }

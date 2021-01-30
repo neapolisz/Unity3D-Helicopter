@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Drag2 : MonoBehaviour
 {
-    // Start is called before the first frame update
     #region Variables
     [Header("Drag Properties")]
     public float dragFactor = 0.05f;
@@ -13,13 +12,14 @@ public class Drag2 : MonoBehaviour
     #endregion
 
     #region Built-in Methods
+    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (rb)
         {
