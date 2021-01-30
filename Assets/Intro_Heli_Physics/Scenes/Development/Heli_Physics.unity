@@ -1031,13 +1031,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007418728}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b015d9c1ce033245a790a71950199d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 1
+  maxSpeed: 2
 --- !u!114 &2007418735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007418728}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83908d883a9bd94bba994f2ed5567ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueSpeed: 2
+--- !u!114 &2007418736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1046,10 +1059,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007418728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83908d883a9bd94bba994f2ed5567ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9b2bd2d15cf4548b66c052155df0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torqueSpeed: 3
+  dragFactor: 0.05
 --- !u!1 &2036071675
 GameObject:
   m_ObjectHideFlags: 0

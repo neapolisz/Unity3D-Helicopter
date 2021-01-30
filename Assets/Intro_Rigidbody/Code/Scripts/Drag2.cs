@@ -2,26 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torque2 : MonoBehaviour
+public class Drag2 : MonoBehaviour
 {
+    // Start is called before the first frame update
     #region Variables
+    [Header("Drag Properties")]
+    public float dragFactor = 0.05f;
+
     private Rigidbody rb;
-    public float torqueSpeed = 2;
     #endregion
 
     #region Built-in Methods
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (rb)
         {
-            rb.AddTorque(Vector3.up * torqueSpeed);
+            float currentSpeed = rb.velocity.magnitude;
+            float finalDrag = currentSpeed * dragFactor;
+            rb.drag = finalDrag;
         }
     }
     #endregion
