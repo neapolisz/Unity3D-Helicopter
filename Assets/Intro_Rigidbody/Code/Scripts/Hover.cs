@@ -8,7 +8,8 @@ public class Hover : MonoBehaviour
     [Header("Hover Properties")]
     public float hoverHeight = 3f;
     public Transform hoverPosition;
-    public float test = 0;
+    public float rotForce = 2;
+    public float timeCounter = 0;
 
     private Rigidbody rb;
     private float weight;
@@ -32,9 +33,8 @@ public class Hover : MonoBehaviour
         if (rb)
         {
             CalculateGroundDistance();
-            float groundDifference = hoverHeight - currentGroundDistance;
-            Vector3 finalHoverForce = Vector3.up * (1 + groundDifference);
-            rb.AddForce(finalHoverForce * weight);
+            HandleHoverForce();
+            //RotationForce();
         }
     }
     #endregion
@@ -50,11 +50,22 @@ public class Hover : MonoBehaviour
             if (hit.transform.tag == "ground")
             {
                 currentGroundDistance = hit.distance;
-            } else
-            {
-                test = 2;
             }
         }
+    }
+
+    void HandleHoverForce()
+    {
+        float groundDifference = hoverHeight - currentGroundDistance;
+        Vector3 finalHoverForce = Vector3.up * (1 + groundDifference);
+        rb.AddForce(finalHoverForce * weight);
+    }
+
+    void RotationForce()
+    {
+        timeCounter += Time.deltaTime;
+        rb.AddForce(Vector3.forward * Mathf.Cos(timeCounter));
+        rb.AddForce(Vector3.right * Mathf.Sin(timeCounter));
     }
     #endregion
 }
