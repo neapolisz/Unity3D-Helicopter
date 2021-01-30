@@ -29,10 +29,14 @@ namespace IndiePixel
         void DrawDebugUI()
         {
             EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+            EditorGUILayout.Space();
+            EditorGUI.indentLevel++;
             EditorGUILayout.LabelField("Throttle: " + targetInput.ThrottleInput);
             EditorGUILayout.LabelField("Collective: " + targetInput.CollectiveInput);
             EditorGUILayout.LabelField("Cyclic: " + targetInput.CyclicInput);
             EditorGUILayout.LabelField("Pedal: " + targetInput.PedalInput);
+            EditorGUI.indentLevel--;
+            EditorGUILayout.Space();
             EditorGUILayout.EndVertical();
         }
         #endregion
