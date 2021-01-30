@@ -188,8 +188,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238714176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.18705606, y: 0.23382603, z: -0.04589302, w: -0.9530107}
+  m_LocalPosition: {x: 4.6141586, y: 8.082468, z: -8.271612}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441866711}
@@ -1031,12 +1031,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007418728}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b015d9c1ce033245a790a71950199d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+--- !u!114 &2007418735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007418728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83908d883a9bd94bba994f2ed5567ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueSpeed: 3
 --- !u!1 &2036071675
 GameObject:
   m_ObjectHideFlags: 0
