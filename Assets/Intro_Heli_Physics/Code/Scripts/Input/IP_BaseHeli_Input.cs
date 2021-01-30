@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace IndiePixel
 {
-    public class IP_BaseInput_Heli : MonoBehaviour
+    public class IP_BaseHeli_Input : MonoBehaviour
     {
         #region Variables
         [Header("Base Input Properties")]
