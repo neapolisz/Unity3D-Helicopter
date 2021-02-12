@@ -35,7 +35,9 @@ namespace IndiePixel
             EditorGUILayout.LabelField("Throttle (-, =): " + targetInput.ThrottleInput.ToString("0.00"));
             EditorGUILayout.LabelField("Collective (up, down): " + targetInput.CollectiveInput.ToString("0.00"));
             EditorGUILayout.LabelField("Cyclic (w, a, s, d): " + targetInput.CyclicInput.ToString("0.00"));
-            EditorGUILayout.LabelField("Pedal (left, right): " + targetInput.PedalInput.ToString("0.00"));
+            EditorGUILayout.LabelField("Pedal (left, right): " + targetInput.PedalInput.ToString("0.00")
+                
+          );
             EditorGUI.indentLevel--;
             EditorGUILayout.Space();
             EditorGUILayout.EndVertical();
