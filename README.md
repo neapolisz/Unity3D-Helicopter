@@ -7,5 +7,5 @@ The mass of the R22 helicopter is set to 1 default.
 
 <p align="center" text-align:center>
   <img src="https://github.com/antoine186/3D-Helicopter/blob/main/imgs/Heli%20Wireframe.PNG" alt="alt text" width=60% height=60%>
-  <figcaption>R22 Helicopter Wireframe</figcaption>
+  <div>R22 Helicopter Wireframe</div>
 </p>
