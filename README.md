@@ -8,3 +8,12 @@ The mass of the R22 helicopter is set to 1 default.
 <p align="center">
   <img src="https://github.com/antoine186/3D-Helicopter/blob/main/imgs/Heli%20Wireframe.PNG" alt="alt text" width=60% height=60%>
 </p>
+
+## 2) Implementation of the UFO rigid body and hovering physics.
+
+The UFO's collider is implemented using a sphere collider. The hover position for this rigid body is placed at the very base of the UFO. The UFO has a mass of 1 and we implemented the hovering mechanics by allowing gravity to be applied to this rigid body. As soon as a distance threshold between the hover position and the floor plane is crossed, as measured by a vertical ray, we apply upwards force to the UFO scaled by the differential between the desired hover stationary distance to the ground and the current distance to the ground.
+
+<p align="center">
+  <img src="https://github.com/antoine186/3D-Helicopter/blob/main/imgs/Heli%20Wireframe.PNG" alt="alt text" width=60% height=60%>
+</p>
+
