@@ -17,3 +17,10 @@ The UFO's collider is implemented using a sphere collider. The hover position fo
   <img src="https://github.com/antoine186/3D-Helicopter/blob/main/imgs/GifMaker_20210212193515087.gif" alt="alt text" width=60% height=60%>
 </p>
 
+Here is the hovering mechanism when challenged in an interesting way:
+
+<p align="center">
+  <img src="https://github.com/antoine186/3D-Helicopter/blob/main/imgs/GifMaker_20210212200823996.gif" alt="alt text" width=60% height=60%>
+</p>
+
+The above rotational displacement was achieved by keeping a time counter from the start of the game and using that as an input to both the cosine and the sine function each respectively applied to the forward axis and the right axis of the UFO rigid body.
